@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <title>Jobby</title>
@@ -7,12 +7,12 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-
     <div class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
           <%= link_to "Jobby", root_path, class: "navbar-brand" %>	
         </div>
+
         <ul class="nav navbar-nav">
           <li><%= link_to "Sign Up", new_user_registration_path %></li>	
           <% if user_signed_in? %>
@@ -31,6 +31,9 @@
     <p class="alert"><%= alert %></p>
 
    <%= yield %>
+<footer>
+  <P class="copyright">copyright 2017</P>
+</footer>   
 
   </body>
 </html>

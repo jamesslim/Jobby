@@ -4,7 +4,7 @@ class JobsController < ApplicationController
   
   def index
   	if params[:category].blank?
-  	  @jobs = Job.all.order("createt_at DESC")
+  	  @jobs = Job.all.order("created_at DESC")
   	else
   	  @category_id = Category.find_by(name: params[:category]).id
   	  @jobs = Job.where(category_id: @category_id).order("created_at DESC")
@@ -32,10 +32,10 @@ class JobsController < ApplicationController
   end
 
   def update
-  	if @job.update(jobs_params)
+  	if @job.update!(jobs_params)
   	  redirect_to @job
   	else 
-  	  render "Edit"
+  	  redirect_to edit_job_path(@job)
   	end
   end
 
