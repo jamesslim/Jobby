@@ -1,4 +1,10 @@
 <% @jobs.each do |job| %>
-  <h2><%= link_to job.title, job %></h2>
-  <h5><%= job.company %></h5>
-<% end %>
+  <div class="col-md-4">
+    <div class="job ">
+      <h2 class="job-title"><%= job.title %></h2>
+  	  <h5 class="company"><%= job.company %></h5>
+      <%= link_to "View Job", job_path(job), class: "btn-custom" %> 	
+    </div> 
+  </div>
+  <% end %>
+ 

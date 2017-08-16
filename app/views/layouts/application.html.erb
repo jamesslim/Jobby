@@ -30,10 +30,14 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-   <%= yield %>
-<footer>
-  <P class="copyright">copyright 2017</P>
-</footer>   
+     <% Category.all.each do |category| %> 
+       <%= link_to category.name,  jobs_path(category: category.name), class: "category" %>
+     <% end %>
+       <div id="container">
+         <%= yield %>
+         <div id="footer"></div>
+       </div>
+
 
   </body>
 </html>

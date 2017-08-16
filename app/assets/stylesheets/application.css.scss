@@ -21,6 +21,9 @@
 
 body {
 	background-color: #fff;
+	background-image: url("desk.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	font-family: 'Playfair Display', serif;
 }
 
@@ -103,6 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 1.4em 1.4em;
 	height: 150px;
 	border-bottom: 4px solid #0a8fd5;
+	text-align: center;
 
 	.job-title {
 		font-size: 1.5em;
@@ -112,9 +116,18 @@ h1, h2, h3, h4, h5, h6 {
 		color: white;
 		margin-bottom: 25px;
 	}
+	.company {
+		font-size: 1.2em;
+		font-family: 'Muli', sans-serif;
+		// font-weight: 200;
+		margin-top: 7px;
+		color: white;
+		padding-bottom: 5px;
+	}
 
 	.btn-custom {
 		margin-top: 20px;
+		margin-bottom: 10px;
 	}
 
 }
@@ -161,10 +174,36 @@ footer {
 	padding: 20px 0px;
 	text-align: right;
 	color: #fff;
-	// display: block;
+	height: 60px;
+	position: absolute;
 }
 .copyright {
 	margin-right: 2%;
+}
+.notice {
+	text-align: center;
+	font-size: 20px;
+}
+.category {
+	color: #fff;
+	font-size: 16px;
+	margin-left: 190px;
+	margin-bottom: 80px;
+}
+h2.title {
+	// text-align: center;
+	color: #fff;;
+}
+p.description {
+	color: #fff;
+}
+div.job {
+	// width: 700px;
+	// margin: auto;
+	text-align: center;
+}
+h4.company {
+	color: #fff;
 }
 
 

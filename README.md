@@ -1,24 +1,13 @@
-# README
+# JOBBY
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Jobby is a digital job log.
 
-Things you may want to cover:
+Users are able to search for and log jobs they are interested in.
 
-* Ruby version
+Job search feature is usking Indeed's API key.
 
-* System dependencies
+Bootstrap was used for styling purposes.
 
-* Configuration
+Simple form gem was used for the layout.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Devise gem was used for authentication of logging in/out users.
